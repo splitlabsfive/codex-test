@@ -7,10 +7,21 @@ def greet(name: str) -> None:
 
 
 def ask_and_greet() -> None:
-    """Prompt for the user's name and greet them."""
-    name = input("What is your name? ")
-    greet(name)
+    """Prompt for the user's name, greet them, and keep going until they quit."""
+    while True:
+        name = input("What is your name? ")
+
+        if name == "quit":
+            print("Goodbye!")
+            break
+
+        if not name:
+            name = "Stranger"
+
+        greet(name)
 
 
 if __name__ == "__main__":
     ask_and_greet()
+
+
