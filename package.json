@@ -1,0 +1,13 @@
+{
+  "name": "etsy-motion",
+  "private": true,
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "dev:web": "pnpm --filter web dev",
+    "dev:worker": "pnpm --filter worker dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm --filter web lint",
+    "prisma:generate": "pnpm --filter web prisma:generate",
+    "prisma:migrate": "pnpm --filter web prisma:migrate"
+  }
+}
