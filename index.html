@@ -8,11 +8,38 @@
   </head>
   <body>
     <header class="hero">
-      <nav class="nav container">
-        <div class="logo">Photo Food Two</div>
-        <a class="btn btn-outline" href="#pricing">Get Started</a>
+      <nav class="nav-wrap" aria-label="Primary">
+        <div class="nav container">
+          <a class="logo" href="#top">Photo Food Two</a>
+
+          <button
+            class="hamburger"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-menu"
+            aria-label="Open menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div id="primary-menu" class="menu">
+            <ul class="menu-links">
+              <li><a href="#features">Features</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="menu-actions">
+              <a class="btn btn-outline" href="#">Login</a>
+              <a class="btn btn-primary" href="#pricing">Start Free</a>
+            </div>
+          </div>
+        </div>
       </nav>
-      <div class="hero-content container">
+
+      <div id="top" class="hero-content container">
         <p class="eyebrow">AI Nutrition Made Simple</p>
         <h1>Track calories from a food photo in seconds.</h1>
         <p class="subtitle">
@@ -93,7 +120,7 @@
         </div>
       </section>
 
-      <section class="section container">
+      <section id="testimonials" class="section container">
         <h2>What users are saying</h2>
         <div class="grid testimonials-grid">
           <blockquote class="card hover-lift">
@@ -109,6 +136,26 @@
             “Perfect starter app. Clean design and no complicated setup.”
             <cite>— Jordan, student</cite>
           </blockquote>
+        </div>
+      </section>
+
+      <section id="faq" class="section section-alt">
+        <div class="container">
+          <h2>Frequently asked questions</h2>
+          <div class="grid features-grid">
+            <article class="card hover-lift">
+              <h3>How accurate are calorie estimates?</h3>
+              <p>Photo Food Two gives smart estimates you can adjust before saving.</p>
+            </article>
+            <article class="card hover-lift">
+              <h3>Can I use it as a beginner?</h3>
+              <p>Yes, the app is designed for beginners with simple, guided tracking.</p>
+            </article>
+            <article class="card hover-lift">
+              <h3>Do I need a paid plan to start?</h3>
+              <p>No, you can start on the free plan and upgrade any time.</p>
+            </article>
+          </div>
         </div>
       </section>
     </main>
